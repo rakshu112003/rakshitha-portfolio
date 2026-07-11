@@ -70,6 +70,10 @@ function Home() {
             src="/images/rakshitha.jpeg"
             alt="Rakshitha HN"
             className="profile-image"
+            loading="eager"
+            onError={(e) => {
+              console.error("Image not found:", e.target.src);
+            }}
           />
         </div>
 
