@@ -23,12 +23,14 @@ function Resume() {
           </p>
 
       <a
-  href="/resume/Rakshitha_HN_Resume.pdf"
-  download
+  href="https://drive.google.com/file/d/1TlqP8uToT7QVasp_Vdvt2_c5Uu0yU_W5/view?usp=drivesdk"
+  target="_blank"
+  rel="noopener noreferrer"
   className="btn"
 >
   <FaDownload /> Download Resume
 </a>
+  
         </div>
 
       </div>
