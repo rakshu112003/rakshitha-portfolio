@@ -1,118 +1,200 @@
 import React from "react";
+import {
+  FaGithub,
+  FaExternalLinkAlt
+} from "react-icons/fa";
+
 import "./Projects.css";
 
 function Projects() {
+
+  const projects = [
+
+    {
+      image: "/images/job-portal.png",
+
+      title: "💼 Job Portal Application",
+
+      description:
+        "A MERN Stack job portal where users can search and apply for jobs while recruiters can manage job postings securely.",
+
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT"
+      ],
+
+      features: [
+        "User Authentication",
+        "Job Search & Apply",
+        "Recruiter Dashboard",
+        "REST API Integration"
+      ],
+
+      github:
+        "https://github.com/rakshu112003/job-portal-application",
+
+      demo:
+        "https://job-portal-application-hnk8-phi.vercel.app/"
+    },
+
+    {
+      image: "/images/expenses-tracker.png",
+
+      title: "💰 Personal Expenses Tracker",
+
+      description:
+        "A MERN Stack application to manage daily income and expenses with authentication, transaction history and financial reports.",
+
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+
+      features: [
+        "Expense Management",
+        "Income Tracking",
+        "Authentication",
+        "Financial Reports"
+      ],
+
+      github:
+        "https://github.com/rakshu112003/personal-expenses-tracker-app",
+
+      demo:
+        "https://personal-expenses-tracker-app-q6tg.vercel.app/"
+    },
+
+    {
+      image: "/images/ai-shopper.png",
+
+      title: "🛍️ AI Shopper Intent Analyzer",
+
+      description:
+        "An AI-powered ecommerce personalization engine that analyzes customer behavior events and predicts shopper intent using LLM technology.",
+
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Google Gemini AI"
+      ],
+
+      features: [
+        "Customer Event Analysis",
+        "Shopper Intent Classification",
+        "Confidence Score Generation",
+        "Personalized Recommendations"
+      ],
+
+      github:
+        "https://github.com/rakshu112003/AI-Shopper-Intent-Analyzer",
+
+      demo:
+        "https://ai-shopper-intent-analyzer-j5ds.vercel.app/"
+    }
+
+  ];
+
   return (
-    <section id="projects" className="projects" data-aos="fade-up">
+
+    <section
+      id="projects"
+      className="projects"
+      data-aos="fade-up"
+    >
+
       <div className="projects-container">
 
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title">
+          My Projects
+        </h2>
 
         <p className="projects-description">
-          Here are some of the full-stack web applications I have developed
-          using modern technologies such as React.js, Node.js, Express.js,
-          MongoDB, and JavaScript.
+          Here are some of the full-stack applications I have built using React.js,
+          Node.js, Express.js, MongoDB, AI and modern web technologies.
         </p>
 
         <div className="projects-grid">
 
-          {/* Job Portal */}
-          <div className="project-card">
+          {projects.map((project, index) => (
 
-            <img
-              src="/images/job-portal.png"
-              alt="Job Portal"
-              className="project-image"
-            />
+            <div
+              className="project-card"
+              key={index}
+            >
 
-            <h3>💼 Job Portal Application</h3>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
 
-            <p>
-              A MERN Stack job portal where users can search and apply for
-              jobs while recruiters can manage job postings securely.
-            </p>
+              <h3>{project.title}</h3>
 
-            <h4>Technologies</h4>
+              <p className="project-description">
+                {project.description}
+              </p>
 
-            <p>
-              React.js • Node.js • Express.js • MongoDB • JWT
-            </p>
+              <h4>Technologies</h4>
 
-            <div className="project-buttons">
+              <div className="tech-list">
+                {project.tech.map((item, i) => (
+                  <span key={i}>
+                    {item}
+                  </span>
+                ))}
+              </div>
 
-              <a
-                href="https://github.com/rakshu112003/job-portal-application"
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                GitHub
-              </a>
+              <h4>Features</h4>
 
-              <a
-                href="https://job-portal-application-hnk8-phi.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline"
-              >
-                Live Demo
-              </a>
+              <ul>
+                {project.features.map((feature, i) => (
+                  <li key={i}>
+                    ✅ {feature}
+                  </li>
+                ))}
+              </ul>
 
-            </div>
+              <div className="project-buttons">
 
-          </div>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  <FaGithub />
+                  GitHub
+                </a>
 
-          {/* Personal Expenses Tracker */}
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-outline"
+                >
+                  <FaExternalLinkAlt />
+                  Live Demo
+                </a>
 
-          <div className="project-card">
-
-            <img
-              src="/images/expenses-tracker.png"
-              alt="Personal Expenses Tracker"
-              className="project-image"
-            />
-
-            <h3>💰 Personal Expenses Tracker</h3>
-
-            <p>
-              A MERN Stack application to manage daily income and expenses
-              with authentication, transaction history, and financial reports.
-            </p>
-
-            <h4>Technologies</h4>
-
-            <p>
-              React.js • Node.js • Express.js • MongoDB
-            </p>
-
-            <div className="project-buttons">
-
-              <a
-                href="https://github.com/rakshu112003/personal-expenses-tracker-app"
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://personal-expenses-tracker-app-q6tg.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-outline"
-              >
-                Live Demo
-              </a>
+              </div>
 
             </div>
 
-          </div>
+          ))}
 
         </div>
 
       </div>
+
     </section>
+
   );
 }
 
