@@ -1,79 +1,272 @@
-/* About Section */
+/* =========================
+   About Section
+========================= */
 
 .about {
-  background: #111827;
-  color: white;
-  padding: 100px 8%;
+
+  background:#111827;
+
+  color:white;
+
+  padding:100px 8%;
+
 }
+
+
 
 .about-container {
-  max-width: 1200px;
-  margin: auto;
+
+  max-width:1200px;
+
+  margin:auto;
+
 }
+
+
+
+/* Section Title */
 
 .section-title {
-  text-align: center;
-  font-size: 42px;
-  color: #38bdf8;
-  margin-bottom: 20px;
+
+  text-align:center;
+
+  font-size:45px;
+
+  color:#38bdf8;
+
+  margin-bottom:35px;
+
+  font-weight:800;
+
 }
 
-.about-text {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #d1d5db;
-  max-width: 900px;
-  margin: 0 auto 25px;
+
+
+/* Introduction */
+
+.about-intro {
+
+  text-align:center;
+
+  max-width:900px;
+
+  margin:0 auto 25px;
+
+  font-size:18px;
+
+  line-height:1.8;
+
+  color:#cbd5e1;
+
 }
+
+
+.about-intro strong {
+
+  color:#38bdf8;
+
+}
+
+
+
+/* Cards Layout */
 
 .about-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  margin-top: 50px;
+
+  margin-top:55px;
+
+  display:grid;
+
+  grid-template-columns:
+
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:30px;
+
 }
+
+
+
+/* Cards */
 
 .detail-card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  transition: 0.3s ease;
-  border: 1px solid rgba(56, 189, 248, 0.2);
+
+  background:#1e293b;
+
+  padding:35px 25px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  border:1px solid rgba(56,189,248,0.2);
+
+  transition:.4s;
+
+  position:relative;
+
+  overflow:hidden;
+
 }
+
+
+
+/* Top Glow Effect */
+
+.detail-card::before {
+
+  content:"";
+
+  position:absolute;
+
+  width:100%;
+
+  height:4px;
+
+  top:0;
+
+  left:0;
+
+  background:#38bdf8;
+
+  transform:scaleX(0);
+
+  transition:.4s;
+
+}
+
+
+
+.detail-card:hover::before {
+
+  transform:scaleX(1);
+
+}
+
+
 
 .detail-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+
+  transform:translateY(-12px);
+
+  box-shadow:
+
+  0 15px 35px rgba(56,189,248,.25);
+
 }
+
+
+
+/* Icon */
+
+.detail-icon {
+
+  width:65px;
+
+  height:65px;
+
+  margin:0 auto 20px;
+
+  border-radius:50%;
+
+  background:#0f172a;
+
+  color:#38bdf8;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:30px;
+
+  transition:.3s;
+
+}
+
+
+
+.detail-card:hover .detail-icon {
+
+  background:#38bdf8;
+
+  color:#0f172a;
+
+  transform:rotate(10deg);
+
+}
+
+
+
+/* Card Heading */
 
 .detail-card h3 {
-  color: #38bdf8;
-  margin-bottom: 15px;
-  font-size: 22px;
+
+  color:white;
+
+  font-size:22px;
+
+  margin-bottom:15px;
+
 }
+
+
+
+/* Card Text */
 
 .detail-card p {
-  color: #d1d5db;
-  font-size: 16px;
-  line-height: 1.6;
+
+  color:#cbd5e1;
+
+  font-size:16px;
+
+  line-height:1.7;
+
 }
 
-/* Responsive */
 
-@media (max-width:768px){
 
-  .about{
-    padding:80px 6%;
-  }
+/* =====================
+   Mobile Responsive
+===================== */
 
-  .section-title{
-    font-size:34px;
-  }
 
-  .about-text{
-    font-size:16px;
-  }
+@media(max-width:768px){
+
+
+.about{
+
+ padding:80px 6%;
+
+}
+
+
+.section-title{
+
+ font-size:35px;
+
+}
+
+
+.about-intro{
+
+ font-size:16px;
+
+}
+
+
+.about-details{
+
+ gap:20px;
+
+}
+
+
+.detail-card{
+
+ padding:30px 20px;
+
+}
 
 }
