@@ -1,51 +1,159 @@
 import React from "react";
+import {
+  FaGraduationCap,
+  FaSchool
+} from "react-icons/fa";
+
 import "./Education.css";
 
+
 function Education() {
-  return (
-    <section id="education" className="education" data-aos="fade-up">
-      <div className="education-container">
 
-        <h2 className="section-title">Education</h2>
 
-        <p className="education-description">
-          My academic journey has provided a strong foundation in computer
-          science, software development, and problem-solving.
-        </p>
+const education = [
 
-        <div className="education-card">
+{
+icon:<FaGraduationCap/>,
+title:"Master of Computer Applications (MCA)",
+college:"Visvesvaraya Technological University (VTU)",
+year:"2023 - 2024",
+score:"CGPA: 8.0"
+},
 
-          <div className="education-item">
-            <h3>🎓 Master of Computer Applications (MCA)</h3>
-            <h4>Visvesvaraya Technological University (VTU)</h4>
-            <p>2023 – 2024</p>
-            <p>CGPA: 8.0</p>
-          </div>
 
-          <div className="education-item">
-            <h3>🎓 Bachelor of Computer Applications (BCA)</h3>
-            <h4>St. Joseph's College For Women, Mysuru</h4>
-            <p>2019 – 2022</p>
-            <p>CGPA: 7.5</p>
-          </div>
+{
+icon:<FaGraduationCap/>,
+title:"Bachelor of Computer Applications (BCA)",
+college:"St. Joseph's College For Women, Mysuru",
+year:"2019 - 2022",
+score:"CGPA: 7.5"
+},
 
-          <div className="education-item">
-            <h3>🏫 Pre-University (PUC)</h3>
-            <h4>St. Anne's PU College</h4>
-            <p>2017 – 2019</p>
-          </div>
 
-          <div className="education-item">
-            <h3>🏫 SSLC</h3>
-            <h4>Vivekananda High School</h4>
-            <p>2017</p>
-          </div>
+{
+icon:<FaSchool/>,
+title:"Pre-University (PUC)",
+college:"St. Anne's PU College",
+year:"2017 - 2019",
+score:""
+},
 
-        </div>
 
-      </div>
-    </section>
-  );
+{
+icon:<FaSchool/>,
+title:"SSLC",
+college:"Vivekananda High School",
+year:"2017",
+score:""
 }
+
+];
+
+
+
+return (
+
+<section 
+id="education"
+className="education"
+data-aos="fade-up"
+>
+
+
+<div className="education-container">
+
+
+<h2 className="section-title">
+Education
+</h2>
+
+
+<p className="education-description">
+
+My academic journey has provided a strong foundation
+in computer science, software development and
+problem-solving.
+
+</p>
+
+
+
+
+<div className="timeline">
+
+
+{
+education.map((item,index)=>(
+
+
+<div 
+className="timeline-item"
+key={index}
+>
+
+
+<div className="timeline-icon">
+
+{item.icon}
+
+</div>
+
+
+
+<div className="education-card">
+
+
+<h3>
+{item.title}
+</h3>
+
+
+<h4>
+{item.college}
+</h4>
+
+
+<span className="year">
+{item.year}
+</span>
+
+
+
+{
+item.score &&
+
+<p>
+{item.score}
+</p>
+
+}
+
+
+
+</div>
+
+
+
+</div>
+
+
+))
+}
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+);
+
+
+}
+
 
 export default Education;
