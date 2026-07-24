@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# 🚀 Rakshitha HN Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website built using **React.js**. This portfolio showcases my skills, projects, education, resume, and contact information as a MERN Stack Developer.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+🔗 
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👩‍💻 About Me
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hi, I'm **Rakshitha HN**, an MCA graduate and passionate MERN Stack Developer from Bengaluru, Karnataka.
 
-### `npm test`
+I enjoy building modern, responsive, and scalable web applications using the MERN Stack and continuously improving my software development skills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Responsive Modern UI
+- Animated Hero Section
+- About Me Section
+- Technical Skills
+- Featured Projects
+- Education Timeline
+- Resume Download
+- Contact Section
+- Mobile Friendly Design
+- Smooth Scrolling
+- AOS Animations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tech Stack
 
-### `npm run eject`
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
+- Node.js
+- Express.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Database
+- MongoDB
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Other Tools
+- Git
+- GitHub
+- VS Code
+- Postman
+- Vercel
+- Google Drive (Resume)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📂 Featured Projects
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 💼 Job Portal
+A MERN Stack job portal where users can search and apply for jobs while recruiters manage job postings.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Tech Stack**
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 💰 Personal Expenses Tracker
+A MERN Stack application for tracking income, expenses, and financial reports.
 
-### Analyzing the Bundle Size
+**Tech Stack**
+- React.js
+- Node.js
+- Express.js
+- MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 🛍 AI Shopper Intent Analyzer
+An AI-powered application that predicts customer shopping intent using Google Gemini AI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Tech Stack**
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- Google Gemini AI
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📸 Portfolio Preview
 
-### Deployment
+<img width="100%" alt="Portfolio Preview" src="./public/images/rakshitha.jpeg">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📥 Resume
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can download my latest resume from the portfolio.
+
+---
+
+## 📞 Contact
+
+**Rakshitha HN**
+
+📧 Email: rakshithahn123@gmail.com
+
+📍 Bengaluru, Karnataka, India
+
+💼 LinkedIn:
+https://linkedin.com/in/rakshithahn
+
+💻 GitHub:
+https://github.com/rakshu112003
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/rakshu112003/rakshitha-portfolio.git
+
+cd rakshitha-portfolio
+
+npm install
+
+npm start
+```
+
+---
+
+## 🚀 Build
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+⭐ If you like this project, don't forget to give it a **Star** on GitHub!
+
+Made with ❤️ by **Rakshitha HN**
